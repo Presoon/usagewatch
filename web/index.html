@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0d16">
+  <title>UsageWatch — One more prompt?</title>
+  <meta name="description" content="Track AI quotas across multiple accounts from your Windows tray. See reset times, credits and Codex resets, choose visible limits and dock a widget to any screen edge.">
+  <link rel="canonical" href="https://usagewatch.seev.pro/">
+  <meta property="og:title" content="UsageWatch — One more prompt? Know what’s left before you hit send.">
+  <meta property="og:description" content="Claude, Codex, Gemini, Kimi, OpenRouter and z.ai in one Windows utility. Multiple accounts, visible-limit controls, credits and reset countdowns, straight from provider APIs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://usagewatch.seev.pro/">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-site="usagewatch">
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="github" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.3-4.3-2.2-6-2.7M15 22v-3.9c0-1.1-.4-1.7-.8-2.1 2.7-.3 5.5-1.3 5.5-6a4.7 4.7 0 0 0-1.3-3.3c.1-.4.6-1.7-.1-3.4 0 0-1.1-.4-3.6 1.3a12.5 12.5 0 0 0-6.5 0C5.7 2.9 4.6 3.3 4.6 3.3c-.7 1.7-.2 3-.1 3.4A4.7 4.7 0 0 0 3.2 10c0 4.7 2.8 5.7 5.5 6-.4.4-.8 1.1-.8 2.1V22"/></symbol>
+    <symbol id="windows" viewBox="0 0 24 24"><path d="M3 5l8-1v7H3zm10-1 8-1v8h-8zM3 13h8v7l-8-1zm10 0h8v8l-8-1z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6zM8 12l3 3 5-6"/></symbol>
+    <symbol id="grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></symbol>
+  </defs></svg>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="UsageWatch home"><img src="assets/logo.png" width="38" height="38" alt=""><span>Usage<span class="brand-light">Watch</span></span></a>
+    <nav aria-label="Main navigation"><a href="#features">Features</a><a href="#contribute">For contributors</a></nav>
+    <a class="github-link" href="https://github.com/Presoon/usagewatch"><svg class="icon"><use href="#github"/></svg><span>View on GitHub</span><span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="hero-edition"><span class="edition-mark" aria-hidden="true">uw.</span><span>A SMALL UTILITY<br>FOR YOUR NEXT BIG IDEA</span></div>
+        <h1 id="hero-title"><span class="hero-line">One more</span><span class="hero-question">prompt?<svg viewBox="0 0 370 23" aria-hidden="true"><path d="M5 15C92 2 235 3 357 10M132 18C224 12 295 14 365 19"/></svg></span></h1>
+        <p class="hero-description"><strong>Know what’s left before you hit send.</strong><br>Your AI quotas, reset times and credits,<br class="hero-break"> tucked into the corner of your desktop.</p>
+        <div class="hero-actions"><a class="button primary" href="https://github.com/Presoon/usagewatch/releases/latest"><svg class="icon"><use href="#windows"/></svg>Get UsageWatch<svg class="icon arrow"><use href="#arrow"/></svg></a><a class="text-link" href="#desktop-title">See it on a desktop <span aria-hidden="true">↗</span></a></div>
+        <div class="account-note"><svg viewBox="0 0 58 38" aria-hidden="true"><rect x="2" y="3" width="31" height="21" rx="2"/><path d="M12 30h12M18 24v6M35 15h5"/><rect x="41" y="11" width="14" height="23" rx="2"/><path d="M46 29h4"/></svg><p><strong>Work and personal. Side by side.</strong><span>Add multiple accounts, even from the same provider.<br>Name them, reorder them and track each separately.</span></p></div>
+      </div>
+      <figure class="product-scene" aria-label="Screenshots of the UsageWatch app and edge widget">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <a class="app-capture" href="assets/app-screenshot.png" target="_blank" rel="noopener" aria-label="Open full-size UsageWatch app screenshot">
+          <img src="assets/app-screenshot.png" width="760" height="560" alt="Actual UsageWatch window with Claude, Codex, Gemini and Kimi accounts, quota bars, reset countdowns, credit balances and visible-limit controls." fetchpriority="high">
+        </a>
+        <a class="widget-capture" href="assets/widget-detail-screenshot.png" target="_blank" rel="noopener" aria-label="Open full-size widget screenshot with Codex details">
+          <span class="widget-caption">THE EDGE WIDGET <span aria-hidden="true">↗</span></span>
+          <img src="assets/widget-screenshot.png" width="498" height="74" alt="Actual UsageWatch edge widget with six provider icons and usage rings. Open to see the expanded quota details.">
+        </a>
+        <figcaption>Actual app &amp; widget <span>· Demo accounts · Click to enlarge</span></figcaption>
+      </figure>
+    </section>
+    <section class="providers wrap" aria-labelledby="providers-title"><div class="section-kicker" id="providers-title">SIX INTEGRATIONS. ONE QUIET COMPANION.</div><div class="provider-list"><span><b class="claude">✳</b>Claude</span><span><b>◎</b>Codex</span><span><b class="gemini">✦</b>Gemini <sup>EXP.</sup></span><span><b class="kimi">K</b>Kimi</span><span><b>⇄</b>OpenRouter</span><span class="zai">z.ai</span></div><p>Gemini uses the experimental Code Assist integration. Availability depends on your account.</p></section>
+    <section class="desktop-showcase wrap" aria-labelledby="desktop-title">
+      <div class="section-heading"><div><div class="eyebrow">THE WIDGET, IN CONTEXT</div><h2 id="desktop-title">Part of your workspace.</h2></div><p>Drag to any screen edge.<br>Hover for the details. Keep going.</p></div>
+      <figure class="desktop-figure">
+        <div class="desktop-stage">
+          <div class="desktop-wallpaper" aria-hidden="true"></div>
+          <div class="desktop-shortcut" aria-hidden="true"><img src="assets/logo.png" width="36" height="36" alt=""><span>UsageWatch</span></div>
+          <div class="desktop-shortcut desktop-shortcut--inflows" aria-hidden="true"><img src="assets/inflows.png" width="36" height="36" alt=""><span>inFlows</span></div>
+          <div class="editor-window" aria-hidden="true">
+            <div class="editor-titlebar"><span class="editor-mark">⌘</span><span>your-next-idea — workspace</span><span class="window-controls">─ &nbsp; □ &nbsp; ×</span></div>
+            <div class="editor-body"><div class="editor-rail"><span>▱</span><span>⌕</span><span>⑂</span><span>▦</span></div><div class="editor-files"><span class="editor-folder">EXPLORER</span><b>⌄ YOUR-NEXT-IDEA</b><span>⌄ src</span><span class="editor-active">&nbsp; ◇ app.ts</span><span>&nbsp; ◇ styles.css</span><span>⌄ public</span><span>&nbsp; ◇ index.html</span><span>◇ README.md</span></div><div class="editor-work"><div class="editor-tab"><span>TS</span> app.ts <span>×</span></div><div class="editor-breadcrumb">src &nbsp; › &nbsp; app.ts</div><pre><span class="editor-comment">// A little more room to focus.</span>
+
+<span class="editor-keyword">const</span> idea = {
+  name: <span class="editor-string">"Something worth building"</span>,
+  status: <span class="editor-string">"in progress"</span>,
+};
+
+<span class="editor-keyword">async function</span> <span class="editor-function">create</span>() {
+  <span class="editor-keyword">await</span> <span class="editor-function">makeItHappen</span>(idea);
+}
+
+<span class="editor-function">create</span>();<span class="editor-caret"></span></pre><div class="editor-terminal"><span>TERMINAL &nbsp; OUTPUT</span><p><b>✓</b> Ready. Your next idea starts here.</p><p class="editor-comment">~/your-next-idea <span class="editor-caret"></span></p></div></div></div><div class="editor-statusbar"><span>⑂ main &nbsp; ✓ All changes saved</span><span>TypeScript &nbsp; UTF-8</span></div>
+          </div>
+          <a class="desktop-widget" href="assets/widget-detail-screenshot.png" target="_blank" rel="noopener" aria-label="Enlarge the real widget and its quota details"><img src="assets/widget-detail-screenshot.png" width="498" height="420" alt="Real UsageWatch widget with six provider rings and usage percentages, plus expanded Codex session and weekly limits, credits and available resets." loading="lazy"></a>
+          <a class="desktop-vertical-widget" href="assets/widget-vertical-screenshot.png" target="_blank" rel="noopener" aria-label="Enlarge the vertical widget with three providers"><img src="assets/widget-vertical-screenshot.png" width="62" height="276" alt="UsageWatch docked vertically to the right edge with Claude, Codex and Gemini." loading="lazy"></a>
+          <svg class="dock-direction" viewBox="0 0 200 140" role="img" aria-label="Move the widget between the bottom and right screen edges"><defs><marker id="dock-arrow-tip" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 2 8 5 2 8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><path d="M 100 132 C 182 132 187 80 180 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="5 6" stroke-linecap="round" marker-start="url(#dock-arrow-tip)" marker-end="url(#dock-arrow-tip)"/></svg>
+          <div class="desktop-taskbar" aria-hidden="true"><div class="taskbar-weather"><span>☀</span><span>21°C<small>Clear skies</small></span></div><div class="taskbar-apps"><svg class="icon"><use href="#windows"/></svg><span class="taskbar-search">⌕</span><span class="taskbar-folder">▰</span><span title="inFlows"><img src="assets/inflows.png" width="25" height="25" alt=""></span><span class="taskbar-current"><img src="assets/logo.png" width="25" height="25" alt=""></span></div><div class="taskbar-tray"><span>⌃ &nbsp; ◉ &nbsp; ♫</span><span>10:24<small>06/09/2026</small></span></div></div>
+        </div>
+        <figcaption><span>Windows desktop mockup</span><span>Actual widget · Demo accounts</span></figcaption>
+      </figure>
+    </section>
+    <section class="features wrap" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><div><div class="eyebrow">A LITTLE UTILITY. A LOT LESS TAB-SWITCHING.</div><h2 id="features-title">Keep your focus.<br>We’ll keep the numbers close.</h2></div><p>Just the information you need,<br>where you already work.</p></div>
+      <div class="feature-grid">
+        <article><div class="feature-icon"><svg class="icon"><use href="#clock"/></svg></div><h3>Your account. Every device.</h3><p>Read quotas directly from provider APIs, including activity on other devices. See session and weekly limits, reset countdowns and credit balances where available. Codex also shows available limit resets.</p><div class="feature-detail"><span class="status-dot"></span> Provider-reported data. Automatically refreshed.</div></article>
+        <article><div class="feature-icon"><svg class="icon"><use href="#grid"/></svg></div><h3>Keep the limits you need.</h3><p>Choose which limits appear for each account in both the popup and widget. Expand a card for account details and extra usage. Keep work and personal accounts together, with their own names and sign-ins.</p><div class="feature-detail"><span class="mini-dock"><i></i><i></i><i></i></span> Multiple accounts. Your order. Your limits.</div></article>
+        <article><div class="feature-icon"><svg class="icon"><use href="#shield"/></svg></div><h3>Your keys stay yours.</h3><p>Connect through provider sign-in or an API key. Tokens and keys are encrypted locally with Windows DPAPI, never saved in plain-text configuration.</p><div class="feature-detail"><svg class="tiny-icon"><use href="#shield"/></svg> Protected by your Windows account.</div></article>
+        <article><div class="feature-icon"><svg class="icon"><use href="#grid"/></svg></div><h3>A widget that fits.</h3><p>Drag the widget to any of the four screen edges. Hover an account for its quota details, or click to open the popup. Choose a light, gray or dark widget, independently of the app’s light, dark or system theme.</p><div class="feature-detail">Horizontal or vertical. Always within reach.</div></article>
+        <article><div class="feature-icon"><svg class="icon"><use href="#clock"/></svg></div><h3>Know how fresh it is.</h3><p>See the next refresh countdown and refresh manually when needed. If an update fails, the last reading stays visible with an outdated-data notice. Provider rate limits show when the app will retry.</p><div class="feature-detail">Last known usage, with a clear update status.</div></article>
+        <article><div class="feature-icon"><svg class="icon"><use href="#windows"/></svg></div><h3>Ready when you are.</h3><p>Optionally launch with Windows and choose an automatic refresh interval from 3 to 60 minutes. Disable an account to pause tracking while keeping its saved sign-in, then enable it again when you need it.</p><div class="feature-detail">A small utility, set up around your routine.</div></article>
+      </div>
+    </section>
+    <section class="contribute wrap" id="contribute" aria-labelledby="contribute-title">
+      <div class="contribute-panel"><div class="contribute-copy"><div class="eyebrow"><span aria-hidden="true">&lt;/&gt;</span> BUILT TO BE BUILT ON</div><h2 id="contribute-title">Your provider.<br>Our next integration.</h2><p>Every integration follows the same TypeScript contract. Add authentication, fetch the data and return a shared snapshot. The existing scheduler and cards take it from there.</p><p class="contribution-note">New providers, parser fixes, better docs — thoughtful contributions of every size are welcome.</p><a class="button secondary" href="https://github.com/Presoon/usagewatch/blob/main/CONTRIBUTING.md">Build with us<svg class="icon"><use href="#arrow"/></svg></a></div>
+        <div class="code-panel"><div class="code-header"><span><i></i><i></i><i></i></span> src/providers/your-provider/</div><div class="file-tree"><div><span>├─</span> auth.ts <small>Connect an account</small></div><div><span>├─</span> api.ts <small>Ask the provider</small></div><div><span>├─</span> parse.ts <small>Normalize the response</small></div><div><span>├─</span> parse.test.ts <small>Keep it reliable</small></div><div class="selected-file"><span>└─</span> index.ts <small>Implement Provider</small></div></div><div class="code-snapshot"><span class="code-purple">fetchSnapshot</span>(): <span class="code-blue">Promise</span>&lt;ProviderSnapshot&gt;</div><div class="code-footer"><span class="status-dot"></span> One contract. A shared UI. Room to grow.</div></div>
+      </div>
+    </section>
+    <section class="closing wrap" aria-label="Get UsageWatch"><div><h2>Less checking. More creating.</h2><p>Make a little room in your tray. Get a little focus back.</p></div><a class="button primary" href="https://github.com/Presoon/usagewatch/releases/latest">Get UsageWatch<svg class="icon"><use href="#arrow"/></svg></a></section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#"><img src="assets/logo.png" width="26" height="26" alt=""><span>UsageWatch</span></a><span>A small companion for your AI workflow.</span><div><a href="https://github.com/Presoon/usagewatch">GitHub ↗</a><a href="https://github.com/Presoon/usagewatch/issues">Issues ↗</a><a href="https://github.com/Presoon/usagewatch/releases">Releases ↗</a></div></footer>
+</body>
+</html>

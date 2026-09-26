@@ -1,0 +1,43 @@
+{
+  "name": "usagewatch",
+  "private": true,
+  "license": "MIT",
+  "version": "0.2.0",
+  "type": "module",
+  "description": "UsageWatch — AI subscription usage in your Windows tray",
+  "scripts": {
+    "dev": "vite",
+    "dev:mock": "vite --mode mock",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "probe": "tsx scripts/probe.ts",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-autostart": "^2",
+    "@tauri-apps/plugin-http": "^2",
+    "@tauri-apps/plugin-log": "^2",
+    "@tauri-apps/plugin-opener": "^2",
+    "@tauri-apps/plugin-positioner": "^2",
+    "@tauri-apps/plugin-store": "^2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4",
+    "@tauri-apps/cli": "^2",
+    "@types/node": "^22.20.1",
+    "@types/react": "^18.3",
+    "@types/react-dom": "^18.3",
+    "@vitejs/plugin-react": "^4",
+    "tailwindcss": "^4",
+    "tsx": "^4",
+    "typescript": "^5.6",
+    "vite": "^6",
+    "vitest": "^2"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "UsageWatch",
+  "version": "0.2.0",
+  "identifier": "com.usagewatch.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "label": "main",
+        "title": "UsageWatch",
+        "width": 760,
+        "height": 560,
+        "minWidth": 480,
+        "minHeight": 320,
+        "center": true,
+        "resizable": true,
+        "maximizable": false,
+        "minimizable": false,
+        "visible": false,
+        "decorations": false,
+        "transparent": false,
+        "alwaysOnTop": false,
+        "skipTaskbar": true,
+        "shadow": true,
+        "focus": true
+      }
+      ,
+      {
+        "label": "widget",
+        "title": "UsageWatch Widget",
+        "url": "index.html#widget",
+        "width": 76,
+        "height": 300,
+        "resizable": false,
+        "visible": false,
+        "decorations": false,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "shadow": false,
+        "focus": false
+      },
+      {
+        "label": "widget-tip",
+        "title": "UsageWatch Preview",
+        "url": "index.html#widget-tip",
+        "width": 280,
+        "height": 240,
+        "resizable": false,
+        "visible": false,
+        "decorations": false,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "shadow": false,
+        "focus": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ]
+  }
+}

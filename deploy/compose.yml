@@ -1,0 +1,6 @@
+services:
+  web:
+    image: ${WEB_IMAGE:?WEB_IMAGE is required}
+    restart: unless-stopped
+    ports:
+      - '6723:80'

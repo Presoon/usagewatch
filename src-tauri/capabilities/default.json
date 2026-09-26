@@ -1,0 +1,39 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capabilities for the main popup window.",
+  "windows": ["main", "widget", "widget-tip"],
+  "permissions": [
+    "core:default",
+    "core:window:allow-show",
+    "core:window:allow-hide",
+    "core:window:allow-set-focus",
+    "core:window:allow-unminimize",
+    "core:window:allow-set-theme",
+    "core:window:allow-set-size",
+    "core:window:allow-start-dragging",
+    "positioner:default",
+    "autostart:default",
+    "opener:default",
+    "log:default",
+    "store:default",
+    {
+      "identifier": "http:default",
+      "allow": [
+        { "url": "https://api.anthropic.com/*" },
+        { "url": "https://platform.claude.com/*" },
+        { "url": "https://console.anthropic.com/*" },
+        { "url": "https://claude.ai/*" },
+        { "url": "https://chatgpt.com/*" },
+        { "url": "https://auth.openai.com/*" },
+        { "url": "https://api.openai.com/*" },
+        { "url": "https://cloudcode-pa.googleapis.com/*" },
+        { "url": "https://oauth2.googleapis.com/*" },
+        { "url": "https://cloudresourcemanager.googleapis.com/*" },
+        { "url": "https://api.kimi.com/*" },
+        { "url": "https://openrouter.ai/*" },
+        { "url": "https://api.z.ai/*" }
+      ]
+    }
+  ]
+}
